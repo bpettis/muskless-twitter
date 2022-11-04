@@ -39,7 +39,6 @@ article, .twitter-head {
 article img {
     max-width: 85%;
     display: block;
-    margin: auto;
 }
 
 .twitter-head {
@@ -51,6 +50,15 @@ article img {
 article {
     display: flex;
     margin-bottom: 2em;
+}
+
+article a:link, article a:visited {
+    color: rgb(0, 186, 124);
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
 }
 
 .profile-picture {
