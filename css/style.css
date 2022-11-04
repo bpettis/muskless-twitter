@@ -83,6 +83,15 @@ article a:hover {
     color: #ccc;
 }
 
+.tweet-metadata a:link, .tweet-metadata a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tweet-metadata a:hover {
+    color: #ccc;
+}
+
 .username {
     font-weight: bolder;
     color: #fff;
