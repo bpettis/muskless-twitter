@@ -1,38 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Twitter</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muskless Twitter</title>
     <style>
-        body {
-            width: 75vw;
-            margin: auto;
-        }
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+    body {
+        background-color: #ededed;
+    }
+    
+    /* The device with borders */
+    .smartphone {
+    position: relative;
+    width: 30vw;
+    height: 75vh;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 100px;
+    border-radius: 36px;
+    }
 
-            width: 100%;
-            height: 100vh;
-        }
+    /* The horizontal line on the top of the device */
+    .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+    }
 
-        img {
-            width: 50%;
-            display: block;
-            margin: auto;
-        }
+    /* The circle on the bottom of the device */
+    .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -90px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+    }
+
+    /* The screen (or content) of the device */
+    .smartphone .content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    color: white;
+    background-color: #333;
+    }
+
+    img {
+        max-width: 85%;
+        display: block;
+        margin: auto;
+    }
     </style>
-</head>
+    </head>
 <body>
-    <main>
-        <h1>Twitter is what’s happening and what people are talking about right now.</h1>
-        <img src="images/own-twitter.png" alt="An image of Bender from Futurama dressed extravagantly and pointing a finger. The text reads: We'll start our own Twitter with blackjack and hookers!" title="We'll start our own Twitter. With blackjack and hookers!" />
-    </main>
+
+<div class="smartphone">
+  <div class="content">
+    <h1>Twitter is what’s happening and what people are talking about right now.</h1>
+    <img src="images/own-twitter.png" alt="An image of Bender from Futurama dressed extravagantly and pointing a finger. The text reads: We'll start our own Twitter with blackjack and hookers!" title="We'll start our own Twitter. With blackjack and hookers!" />
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, consectetur voluptate corporis dolores exercitationem atque! Perferendis quo soluta esse distinctio assumenda culpa provident autem cumque amet, asperiores beatae dolorem, quia ut, a porro ab. Deserunt, consectetur quibusdam iusto laboriosam amet dicta accusantium quo doloremque illum enim hic rem illo velit dolor corrupti, voluptatum labore doloribus possimus officiis error mollitia vero tenetur, cum delectus? Asperiores animi ab reprehenderit veniam pariatur non dicta porro repellat cum. Eaque culpa possimus praesentium sit molestias quo ex fugit consectetur dolorum pariatur atque sunt, dicta repellendus id eius nam aliquid suscipit vero qui quae voluptates deleniti corrupti ipsum. Magni reprehenderit amet fugit vel necessitatibus earum dicta sed nemo unde, nesciunt sit delectus excepturi at debitis culpa praesentium recusandae quis deserunt, eaque maxime, cumque ducimus eveniet sequi ipsum. Consequatur earum, fugit, aspernatur quam deleniti sapiente ex, id corrupti odit necessitatibus tenetur officia molestiae? Alias repellat corrupti amet rerum, ratione et quisquam? Tempora ipsum nihil excepturi fuga. Quas, non eum necessitatibus ab sint nam est nostrum laudantium possimus blanditiis. Voluptatum ipsum totam sunt modi id, facilis officiis at possimus labore porro nam blanditiis voluptatibus inventore delectus provident, dolores illum et qui asperiores magni esse atque unde mollitia hic! Molestiae et earum aliquid dolor iusto quisquam, obcaecati officia minus alias est debitis quas voluptatem ullam accusantium, maxime provident corporis dolore rem incidunt dignissimos magnam iure. Magnam suscipit consequuntur, a veritatis consequatur architecto dolorem deleniti recusandae hic autem porro minima ad, inventore error! Voluptates ducimus nemo consectetur eveniet magni deserunt.</p>
+</div>
+</div>
 </body>
 </html>
