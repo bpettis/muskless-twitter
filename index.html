@@ -20,12 +20,23 @@
     <header>
         <h1>Twitter <sup id="tagline">(now with 1000% less musk!)</sup></h1>
     </header>
+    <section class="tweet-form">
+        <script src="app.js" defer></script>
+        <form name="newTweet" action="" method="GET">
+            <span>What's happening?</span> <br />
+            <textarea rows="5" cols="40" name="tweet" ></textarea><br />
+            <span>Display Name: <input type="text" name="name" > </span><br />
+            <span>Username: @<input type="text" name="username" > </span><br />
+            <input type="button" name="submit" value="Tweet!" onCLick="addTweet(this.form)">
+        </form>
+    </section>
+
     <main class="smartphone">
-        <div class="content">
-            <section class="twitter-head">
+        <div class="content" id="timeline">
+            <section class="twitter-head" id="twitter-head">
                 <h1>Trending Tweets</h1>
             </section>
-
+            
             <article>
                 <div class="profile-picture">
                     <img src="images/profiles/bpettis.jpg" alt="" />

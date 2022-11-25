@@ -113,3 +113,8 @@ article a:hover {
     font-size: 0.9em;
     font-weight: light;
 }
+
+.tweet-form {
+    width: fit-content;
+    margin: 2em auto;
+}
