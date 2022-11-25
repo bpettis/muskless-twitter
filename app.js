@@ -13,6 +13,11 @@ function addTweet(form) {
         return;
     }
 
+    if (username == 'elonmusk') {
+        alert('@elonmusk is not allowed to post to Muskless Twitter');
+        return;
+    }
+
 
 
     let article = document.createElement("article");
