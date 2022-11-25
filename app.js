@@ -20,3 +20,16 @@ function addTweet(form) {
     head.after(article);
     form.reset();
 };
+
+function toggleForm() {
+    console.log('toggleForm');
+    let x = document.getElementById("tweet-form");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }    
+}
+
+document.getElementById("close-button-svg").addEventListener("click", toggleForm);
+document.getElementById("tweet-button").addEventListener("click", toggleForm);

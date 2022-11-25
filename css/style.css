@@ -115,6 +115,59 @@ article a:hover {
 }
 
 .tweet-form {
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3em;
     width: fit-content;
-    margin: 2em auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 1em 1em #333);
+
+    position: absolute;
+    z-index: 10;
+}
+
+#close-button {
+    width: 100%;    
+    display: flex;
+    justify-content: end;
+}
+
+#close-button svg {
+    width: 5%;
+    fill: white;
+    margin-bottom: 0.25em;
+}
+
+#close-button svg:hover {
+    fill: #eee;
+    cursor: pointer;
+}
+
+#tweet-button {
+    width: 2em;
+    background-color: #1DA1F2;
+    filter: drop-shadow(0 1em 1em #333);
+    padding: 0.75em;
+    border-radius: 50px;
+    left: 90%;
+    top: 95%;
+    transform: translate(-90%, -90%);
+    
+    position: absolute;
+    z-index: 15;
+}
+
+#tweet-button:hover {
+    filter: drop-shadow(0 0 0.25em #1DA1F2);
+}
+
+#tweet-button svg:hover {
+    fill: #ccc;
+}
+
+#tweet-button svg {
+    fill: #fff;
 }
