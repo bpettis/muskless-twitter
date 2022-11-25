@@ -18,4 +18,5 @@ function addTweet(form) {
     article.innerHTML = '<div class="profile-picture"><img src="images/profiles/twitter-avi-gender-balanced-figure.png" alt="" /></div><div class="tweet">    <div class="tweet-metadata">        <div class="username">' + name + ' <span>@' + username + '</span></div><div class="timestamp"><time>now</time></div></div>    <div class="tweet-body">        <p>' + tweet + '</p>    </div>    <div class="metrics">        <div class="retweets"><span>0</span> Retweets</div>        <div class="likes"><span>0</span> Likes</div>    </div></div>';
 
     head.after(article);
+    form.reset();
 };
