@@ -148,6 +148,7 @@ article a:hover {
 
 #tweet-button {
     width: 2em;
+    height: 2em;
     background-color: #1DA1F2;
     filter: drop-shadow(0 1em 1em #333);
     padding: 0.75em;
