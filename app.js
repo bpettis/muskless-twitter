@@ -10,6 +10,7 @@ function addTweet(form) {
     let tweet = form.tweet.value; 
     if (tweet === '') {
         alert('You didn\'t enter a tweet!');
+        return;
     }
 
 
@@ -19,6 +20,7 @@ function addTweet(form) {
 
     head.after(article);
     form.reset();
+    toggleForm();
 };
 
 function toggleForm() {
