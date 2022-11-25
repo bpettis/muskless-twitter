@@ -20,7 +20,7 @@ function addTweet(form) {
 
     head.after(article);
     form.reset();
-    toggleForm();
+    toggleForm;
 };
 
 function toggleForm() {
